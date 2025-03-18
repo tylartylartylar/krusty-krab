@@ -454,11 +454,11 @@
 ## 11. Technology Stack
 
 ### 11.1 Infrastructure Technologies
-- **Virtualization**: VMware ESXi / Proxmox
+- **Virtualization**: Proxmox
 - **Containers**: Docker, Kubernetes
-- **Operating Systems**: Ubuntu Server, Windows Server
-- **Network**: Cisco / Ubiquiti Network Equipment
-- **Storage**: NAS (Synology/QNAP), SAN for larger implementations
+- **Operating Systems**: Ubuntu Server
+- **Network**: Cisco Network Equipment
+- **Storage**: FreeNAS
 
 ### 11.2 Database Technologies
 - **Relational DB**: PostgreSQL
@@ -468,7 +468,7 @@
 - **Caching**: Redis
 
 ### 11.3 Backend Technologies
-- **Programming Languages**: Python, Java, Go
+- **Programming Languages**: Python, Go
 - **API Framework**: FastAPI, Spring Boot
 - **Message Broker**: RabbitMQ / Kafka
 - **Authentication**: OAuth 2.0, JWT
