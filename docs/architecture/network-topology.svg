@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#f8f9fa" />
+  <text x="500" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Krusty Krab Network Topology</text>
+  
+  <!-- Internet Cloud -->
+  <ellipse cx="500" cy="100" rx="120" ry="40" fill="#e6f2ff" stroke="#0066cc" stroke-width="2" />
+  <text x="500" y="105" font-family="Arial" font-size="16" text-anchor="middle">Internet</text>
+  
+  <!-- ISP Connections -->
+  <ellipse cx="380" cy="160" rx="70" ry="25" fill="#cce5ff" stroke="#0066cc" stroke-width="2" />
+  <text x="380" y="165" font-family="Arial" font-size="14" text-anchor="middle">ISP1 (Active)</text>
+  
+  <ellipse cx="620" cy="160" rx="70" ry="25" fill="#cce5ff" stroke="#0066cc" stroke-width="2" />
+  <text x="620" y="165" font-family="Arial" font-size="14" text-anchor="middle">ISP2 (Passive)</text>
+  
+  <!-- Cloud to ISP Lines -->
+  <line x1="460" y1="125" x2="400" y2="145" stroke="#0066cc" stroke-width="2" />
+  <line x1="540" y1="125" x2="600" y2="145" stroke="#0066cc" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Network Closet Box -->
+  <rect x="175" y="220" width="650" height="300" fill="#f0f0f0" stroke="#666666" stroke-width="2" rx="10" ry="10" />
+  <text x="500" y="240" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Network Closet</text>
+  
+  <!-- Firewall -->
+  <rect x="450" y="260" width="100" height="60" fill="#ffcccc" stroke="#cc0000" stroke-width="2" rx="5" ry="5" />
+  <text x="500" y="290" font-family="Arial" font-size="14" text-anchor="middle">KK-FW01</text>
+  <text x="500" y="310" font-family="Arial" font-size="12" text-anchor="middle">192.168.0.1/24</text>
+  
+  <!-- ISP to Firewall Lines -->
+  <line x1="380" y1="185" x2="470" y2="260" stroke="#0066cc" stroke-width="2" />
+  <line x1="620" y1="185" x2="530" y2="260" stroke="#0066cc" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Core Switch -->
+  <rect x="450" y="350" width="100" height="50" fill="#ccffcc" stroke="#009900" stroke-width="2" rx="5" ry="5" />
+  <text x="500" y="375" font-family="Arial" font-size="14" text-anchor="middle">KK-CORE01</text>
+  <text x="500" y="395" font-family="Arial" font-size="12" text-anchor="middle">192.168.0.10/24</text>
+  
+  <!-- Firewall to Core Line -->
+  <line x1="500" y1="320" x2="500" y2="350" stroke="#000000" stroke-width="2" />
+  
+  <!-- Distribution Switch -->
+  <rect x="450" y="430" width="100" height="50" fill="#cce5ff" stroke="#0066cc" stroke-width="2" rx="5" ry="5" />
+  <text x="500" y="455" font-family="Arial" font-size="14" text-anchor="middle">KK-DIST01</text>
+  <text x="500" y="475" font-family="Arial" font-size="12" text-anchor="middle">192.168.0.11/24</text>
+  
+  <!-- Core to Distribution Line -->
+  <line x1="500" y1="400" x2="500" y2="430" stroke="#000000" stroke-width="2" />
+  
+  <!-- Servers Group -->
+  <rect x="200" y="310" width="200" height="180" fill="#f9f9f9" stroke="#999999" stroke-width="1" rx="5" ry="5" stroke-dasharray="5,5" />
+  <text x="300" y="330" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Server Farm (VLAN 30)</text>
+  
+  <!-- Individual Servers -->
+  <rect x="220" y="340" width="160" height="30" fill="#e6e6ff" stroke="#6666cc" stroke-width="1" rx="3" ry="3" />
+  <text x="300" y="360" font-family="Arial" font-size="12" text-anchor="middle">KK-DB01 - 192.168.30.10</text>
+  
+  <rect x="220" y="380" width="160" height="30" fill="#e6e6ff" stroke="#6666cc" stroke-width="1" rx="3" ry="3" />
+  <text x="300" y="400" font-family="Arial" font-size="12" text-anchor="middle">KK-WEB01 - 192.168.30.11</text>
+  
+  <rect x="220" y="420" width="160" height="30" fill="#e6e6ff" stroke="#6666cc" stroke-width="1" rx="3" ry="3" />
+  <text x="300" y="440" font-family="Arial" font-size="12" text-anchor="middle">KK-FILE01 - 192.168.30.12</text>
+  
+  <rect x="220" y="460" width="160" height="30" fill="#e6e6ff" stroke="#6666cc" stroke-width="1" rx="3" ry="3" />
+  <text x="300" y="480" font-family="Arial" font-size="12" text-anchor="middle">KK-POS01 - 192.168.30.13</text>
+  
+  <!-- Server to Core Lines -->
+  <line x1="380" y1="355" x2="450" y2="375" stroke="#000000" stroke-width="1" />
+  <line x1="380" y1="395" x2="450" y2="380" stroke="#000000" stroke-width="1" />
+  <line x1="380" y1="435" x2="450" y2="385" stroke="#000000" stroke-width="1" />
+  <line x1="380" y1="475" x2="450" y2="390" stroke="#000000" stroke-width="1" />
+  
+  <!-- Access Switch -->
+  <rect x="450" y="510" width="100" height="50" fill="#ffffcc" stroke="#cc9900" stroke-width="2" rx="5" ry="5" />
+  <text x="500" y="535" font-family="Arial" font-size="14" text-anchor="middle">KK-ACC01</text>
+  <text x="500" y="555" font-family="Arial" font-size="12" text-anchor="middle">192.168.0.12/24</text>
+  
+  <!-- Distribution to Access Line -->
+  <line x1="500" y1="480" x2="500" y2="510" stroke="#000000" stroke-width="2" />
+  
+  <!-- VLAN Labels -->
+  <rect x="700" y="310" width="120" height="180" fill="#f9f9f9" stroke="#999999" stroke-width="1" rx="5" ry="5" stroke-dasharray="5,5" />
+  <text x="760" y="330" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">VLANs</text>
+  
+  <rect x="710" y="340" width="100" height="25" fill="#ffcccc" stroke="#cc0000" stroke-width="1" rx="3" ry="3" />
+  <text x="760" y="357" font-family="Arial" font-size="12" text-anchor="middle">VLAN 99 - Mgmt</text>
+  
+  <rect x="710" y="375" width="100" height="25" fill="#ccffcc" stroke="#009900" stroke-width="1" rx="3" ry="3" />
+  <text x="760" y="392" font-family="Arial" font-size="12" text-anchor="middle">VLAN 10 - Emp</text>
+  
+  <rect x="710" y="410" width="100" height="25" fill="#cce5ff" stroke="#0066cc" stroke-width="1" rx="3" ry="3" />
+  <text x="760" y="427" font-family="Arial" font-size="12" text-anchor="middle">VLAN 20 - Guest</text>
+  
+  <rect x="710" y="445" width="100" height="25" fill="#e6e6ff" stroke="#6666cc" stroke-width="1" rx="3" ry="3" />
+  <text x="760" y="462" font-family="Arial" font-size="12" text-anchor="middle">VLAN 30 - Server</text>
+  
+  <!-- Building Areas Box -->
+  <rect x="100" y="600" width="800" height="180" fill="#f9f9f9" stroke="#999999" stroke-width="2" rx="10" ry="10" />
+  <text x="500" y="620" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Krusty Krab Floor Plan</text>
+  
+  <!-- Room Boxes -->
+  <rect x="120" y="640" width="140" height="120" fill="#ffffcc" stroke="#cc9900" stroke-width="1" />
+  <text x="190" y="660" font-family="Arial" font-size="14" text-anchor="middle">Dining Area</text>
+  
+  <rect x="270" y="640" width="140" height="120" fill="#ccffff" stroke="#009999" stroke-width="1" />
+  <text x="340" y="660" font-family="Arial" font-size="14" text-anchor="middle">Kitchen</text>
+  
+  <rect x="420" y="640" width="140" height="120" fill="#ffccff" stroke="#cc00cc" stroke-width="1" />
+  <text x="490" y="660" font-family="Arial" font-size="14" text-anchor="middle">Mr. Krabs' Office</text>
+  
+  <rect x="570" y="640" width="140" height="120" fill="#e6e6ff" stroke="#6666cc" stroke-width="1" />
+  <text x="640" y="660" font-family="Arial" font-size="14" text-anchor="middle">Storage Room</text>
+  
+  <rect x="720" y="640" width="140" height="120" fill="#f0f0f0" stroke="#666666" stroke-width="1" />
+  <text x="790" y="660" font-family="Arial" font-size="14" text-anchor="middle">Spare Office</text>
+  
+  <!-- Access Points -->
+  <circle cx="150" cy="680" r="10" fill="#ffcc99" stroke="#cc6600" stroke-width="1" />
+  <text x="150" cy="700" font-family="Arial" font-size="10" text-anchor="middle">KK-AP01</text>
+  
+  <circle cx="230" cy="680" r="10" fill="#ffcc99" stroke="#cc6600" stroke-width="1" />
+  <text x="230" cy="700" font-family="Arial" font-size="10" text-anchor="middle">KK-AP02</text>
+  
+  <circle cx="340" cy="680" r="10" fill="#ffcc99" stroke="#cc6600" stroke-width="1" />
+  <text x="340" cy="700" font-family="Arial" font-size="10" text-anchor="middle">KK-AP04</text>
+  
+  <circle cx="490" cy="680" r="10" fill="#ffcc99" stroke="#cc6600" stroke-width="1" />
+  <text x="490" cy="700" font-family="Arial" font-size="10" text-anchor="middle">KK-AP03</text>
+  
+  <circle cx="640" cy="680" r="10" fill="#ffcc99" stroke="#cc6600" stroke-width="1" />
+  <text x="640" cy="700" font-family="Arial" font-size="10" text-anchor="middle">KK-AP05</text>
+  
+  <circle cx="790" cy="680" r="10" fill="#ffcc99" stroke="#cc6600" stroke-width="1" />
+  <text x="790" cy="700" font-family="Arial" font-size="10" text-anchor="middle">KK-AP06</text>
+  
+  <!-- Workstations -->
+  <rect x="150" cy="730" width="20" height="15" fill="#ccffcc" stroke="#009900" stroke-width="1" />
+  <text x="160" cy="750" font-family="Arial" font-size="10" text-anchor="middle">KK-REG01</text>
+  
+  <rect x="340" cy="730" width="20" height="15" fill="#ccffcc" stroke="#009900" stroke-width="1" />
+  <text x="350" cy="750" font-family="Arial" font-size="10" text-anchor="middle">KK-WS01</text>
+  
+  <rect x="490" cy="730" width="20" height="15" fill="#ccffcc" stroke="#009900" stroke-width="1" />
+  <text x="500" cy="750" font-family="Arial" font-size="10" text-anchor="middle">KK-WS02</text>
+  
+  <!-- Lines from Access Switch to Areas -->
+  <line x1="500" y1="560" x2="190" y2="640" stroke="#000000" stroke-width="1" />
+  <line x1="500" y1="560" x2="340" y2="640" stroke="#000000" stroke-width="1" />
+  <line x1="500" y1="560" x2="490" y2="640" stroke="#000000" stroke-width="1" />
+  <line x1="500" y1="560" x2="640" y2="640" stroke="#000000" stroke-width="1" />
+  <line x1="500" y1="560" x2="790" y2="640" stroke="#000000" stroke-width="1" />
+  
+  <!-- Legend -->
+  <rect x="800" y="200" width="180" height="200" fill="white" stroke="#999999" stroke-width="1" rx="5" ry="5" />
+  <text x="890" y="220" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend Items -->
+  <circle cx="820" y="240" r="8" fill="#e6f2ff" stroke="#0066cc" stroke-width="1" />
+  <text x="890" y="244" font-family="Arial" font-size="12" text-anchor="middle">ISP Connection</text>
+  
+  <rect x="815" y="255" width="16" height="10" fill="#ffcccc" stroke="#cc0000" stroke-width="1" />
+  <text x="890" y="264" font-family="Arial" font-size="12" text-anchor="middle">Firewall</text>
+  
+  <rect x="815" y="275" width="16" height="10" fill="#ccffcc" stroke="#009900" stroke-width="1" />
+  <text x="890" y="284" font-family="Arial" font-size="12" text-anchor="middle">Core Switch</text>
+  
+  <rect x="815" y="295" width="16" height="10" fill="#cce5ff" stroke="#0066cc" stroke-width="1" />
+  <text x="890" y="304" font-family="Arial" font-size="12" text-anchor="middle">Distribution Switch</text>
+  
+  <rect x="815" y="315" width="16" height="10" fill="#ffffcc" stroke="#cc9900" stroke-width="1" />
+  <text x="890" y="324" font-family="Arial" font-size="12" text-anchor="middle">Access Switch</text>
+  
+  <rect x="815" y="335" width="16" height="10" fill="#e6e6ff" stroke="#6666cc" stroke-width="1" />
+  <text x="890" y="344" font-family="Arial" font-size="12" text-anchor="middle">Server</text>
+  
+  <circle cx="820" y="360" r="8" fill="#ffcc99" stroke="#cc6600" stroke-width="1" />
+  <text x="890" y="364" font-family="Arial" font-size="12" text-anchor="middle">Access Point</text>
+  
+  <rect x="815" y="375" width="16" height="10" fill="#ccffcc" stroke="#009900" stroke-width="1" />
+  <text x="890" y="384" font-family="Arial" font-size="12" text-anchor="middle">Workstation</text>
+</svg>
