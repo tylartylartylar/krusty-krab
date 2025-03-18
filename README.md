@@ -135,46 +135,6 @@ krusty-krab-digital-twin/
     ├── monitoring/              # System monitoring
     └── testing/                 # Testing utilities
 ```
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Linux or Windows operating system
-- Minimum 16GB RAM for development environment
-- 1TB+ storage for full implementation
-- Basic networking equipment
-- Docker and Docker Compose
-- Git
-
-### Development Environment Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/krusty-krab-digital-twin.git
-   cd krusty-krab-digital-twin
-   ```
-
-2. Set up the development environment:
-   ```bash
-   ./tools/setup-dev-environment.sh
-   ```
-
-3. Initialize the database:
-   ```bash
-   ./database/init-dev-databases.sh
-   ```
-
-4. Start the development services:
-   ```bash
-   docker-compose -f infrastructure/docker-compose.dev.yml up -d
-   ```
-
-5. Access the development dashboard:
-   ```
-   http://localhost:3000/admin
-   ```
-
 ## 📊 Business Components
 
 The digital twin includes simulation of all key business components:
