@@ -30,15 +30,15 @@ Detailed architecture documentation can be found in the [docs/architecture](docs
 ## 🛠️ Technology Stack
 
 ### Infrastructure
-- Virtualization: VMware ESXi / Proxmox
+- Virtualization: Proxmox
 - Containers: Docker, Kubernetes
-- Operating Systems: Ubuntu Server, Windows Server
-- Network: Cisco / Ubiquiti Network Equipment
-- Storage: NAS (Synology/QNAP)
+- Operating Systems: Ubuntu Server
+- Network: Cisco Network Equipment
+- Storage: FreeNAS
 
 ### Backend
-- Databases: PostgreSQL, MongoDB, InfluxDB, ClickHouse
-- Languages: Python, Java, Go
+- Databases: PostgreSQL
+- Languages: Python, Go
 - API Framework: FastAPI, Spring Boot
 - Message Broker: RabbitMQ / Kafka
 - Authentication: OAuth 2.0, JWT
