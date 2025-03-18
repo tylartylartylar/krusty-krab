@@ -32,29 +32,28 @@ Detailed architecture documentation can be found in the [docs/architecture](docs
 ### Infrastructure
 - Virtualization: Proxmox
 - Containers: Docker, Kubernetes
-- Operating Systems: Ubuntu Server
+- Operating Systems: TBD
 - Network: Cisco Network Equipment
-- Storage: FreeNAS
+- Storage: TBD
 
 ### Backend
 - Databases: PostgreSQL
 - Languages: Python, Go
-- API Framework: FastAPI, Spring Boot
-- Message Broker: RabbitMQ / Kafka
+- API Framework: TBD
+- Message Broker: TBD
 - Authentication: OAuth 2.0, JWT
 
 ### Frontend
-- Framework: React.js, Vue.js
-- Mobile: React Native
-- POS Interface: Electron
+- Framework: Custom HTML5 Application
+- POS Interface: Custom HTML5 Application
 - Kitchen Display: Custom HTML5 Application
-- Admin Dashboard: React with Material-UI
+- Admin Dashboard: Custom HTML5 Application
 
 ### DevOps & Monitoring
-- CI/CD: Jenkins, GitHub Actions
-- Monitoring: Prometheus, Grafana
-- Logging: ELK Stack (Elasticsearch, Logstash, Kibana)
-- Backup: Veeam, rsync-based solutions
+- CI/CD: GitHub Actions
+- Monitoring: TBD
+- Logging: TBD
+- Backup: TBD - budget slashed by Krabs
 
 ## 🗺️ Project Roadmap
 
@@ -94,8 +93,6 @@ This project is implemented in six phases over approximately 12 months:
    - Testing & quality assurance
    - Digital twin refinement
    - Project completion
-
-Detailed timeline and task tracking is available in [docs/timeline/implementation-timeline.md](docs/timeline/implementation-timeline.md).
 
 ## 📁 Repository Structure
 
@@ -178,8 +175,6 @@ krusty-krab-digital-twin/
    http://localhost:3000/admin
    ```
 
-See [docs/development-guide.md](docs/development-guide.md) for more detailed development instructions.
-
 ## 📊 Business Components
 
 The digital twin includes simulation of all key business components:
@@ -227,12 +222,6 @@ Contributions to this project are welcome! Please follow these steps:
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
