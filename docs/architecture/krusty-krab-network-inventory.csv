@@ -1,0 +1,28 @@
+Device Type,Device Name,Location,IP Address,VLAN,MAC Address,Connected To,Notes
+Router/Firewall,KK-FW01,Network Closet,192.168.0.1/24,99,00:1A:2B:3C:4D:5E,ISP1 (WAN1) / Core Switch (LAN),Primary gateway - Cisco device with dual WAN
+Router/Firewall,KK-FW01-WAN2,Network Closet,192.168.0.2/24,99,00:1A:2B:3C:4D:5F,ISP2 (WAN2),Secondary interface for failover
+Switch,KK-CORE01,Network Closet,192.168.0.10/24,99,00:1A:2B:3C:4D:6A,KK-FW01 / KK-DIST01 / Servers,24-port multilayer core switch
+Switch,KK-DIST01,Network Closet,192.168.0.11/24,99,00:1A:2B:3C:4D:6B,KK-CORE01 / KK-ACC01,48-port distribution switch
+Switch,KK-ACC01,Network Closet,192.168.0.12/24,99,00:1A:2B:3C:4D:6C,KK-DIST01 / End devices / APs,48-port PoE+ access switch
+Server,KK-DB01,Network Closet,192.168.30.10/24,30,00:1A:2B:3C:4D:7A,KK-CORE01,Database server - Customer data & inventory
+Server,KK-WEB01,Network Closet,192.168.30.11/24,30,00:1A:2B:3C:4D:7B,KK-CORE01,Web server - Online ordering system
+Server,KK-FILE01,Network Closet,192.168.30.12/24,30,00:1A:2B:3C:4D:7C,KK-CORE01,File server - Recipes and business documents
+Server,KK-POS01,Network Closet,192.168.30.13/24,30,00:1A:2B:3C:4D:7D,KK-CORE01,Point of sale server - Transaction processing
+Access Point,KK-AP01,Dining Area North,192.168.0.101/24,99,00:1A:2B:3C:4D:8A,KK-ACC01,Covers north dining area - Employee & Guest WiFi
+Access Point,KK-AP02,Dining Area South,192.168.0.102/24,99,00:1A:2B:3C:4D:8B,KK-ACC01,Covers south dining area - Employee & Guest WiFi
+Access Point,KK-AP03,Mr. Krabs' Office,192.168.0.103/24,99,00:1A:2B:3C:4D:8C,KK-ACC01,Covers office area - Employee WiFi only
+Access Point,KK-AP04,Kitchen,192.168.0.104/24,99,00:1A:2B:3C:4D:8D,KK-ACC01,Covers kitchen area - Employee WiFi only
+Access Point,KK-AP05,Storage Room,192.168.0.105/24,99,00:1A:2B:3C:4D:8E,KK-ACC01,Covers storage area - Employee WiFi only
+Access Point,KK-AP06,Spare Office,192.168.0.106/24,99,00:1A:2B:3C:4D:8F,KK-ACC01,Covers spare office - Employee WiFi only
+Workstation,KK-REG01,Dining Area (Register),192.168.10.101/24,10,00:1A:2B:3C:4D:9A,KK-ACC01,Cash register terminal
+Workstation,KK-WS01,Kitchen,192.168.10.102/24,10,00:1A:2B:3C:4D:9B,KK-ACC01,SpongeBob's workstation
+Workstation,KK-WS02,Mr. Krabs' Office,192.168.10.103/24,10,00:1A:2B:3C:4D:9C,KK-ACC01,Mr. Krabs' workstation
+Network,Management VLAN,Network-wide,192.168.0.0/24,99,N/A,N/A,For network management
+Network,Employee VLAN,Network-wide,192.168.10.0/24,10,N/A,N/A,For employee devices and workstations
+Network,Guest VLAN,Network-wide,192.168.20.0/24,20,N/A,N/A,For guest WiFi users
+Network,Server VLAN,Network-wide,192.168.30.0/24,30,N/A,N/A,For server infrastructure
+DHCP Scope,Employee WiFi DHCP,Network-wide,192.168.10.150-192.168.10.250,10,N/A,N/A,For employee wireless devices
+DHCP Scope,Guest WiFi DHCP,Network-wide,192.168.20.50-192.168.20.250,20,N/A,N/A,For guest wireless devices
+Service,DNS Server,Network Closet,192.168.30.10/24,30,N/A,KK-DB01,Hosted on database server
+Service,NTP Server,Network Closet,192.168.30.11/24,30,N/A,KK-WEB01,Hosted on web server
+Service,DHCP Server,Network Closet,192.168.0.1/24,99,N/A,KK-FW01,Hosted on firewall
