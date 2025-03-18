@@ -3,18 +3,18 @@ package main
 import (
 	"log"
 	"net/http"
-    "krusty-krab/prototypes/pos-system/handlers"
+
+	"krusty-krab/prototypes/pos-system/api/root"
+	"krusty-krab/prototypes/pos-system/api/v1"
 	"krusty-krab/prototypes/pos-system/middleware"
 )
 
 func main() {
 	mux := http.NewServeMux()
 
-	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("Welcome to the Krusty Krab POS System"))
-	})
+	v1.RegisterRoutes(mux)
 
-	mux.HandleFunc("/health", handlers.HealthHandler())
+	mux.HandleFunc("/", root.Handler())
 
 	server := &http.Server{
 		Addr:    ":8080",
