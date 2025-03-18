@@ -1,2 +1,2 @@
 # krusty-krab
-A full technical architecture of the Krusty Krab
+A full digital transformation and digital twin of the Krusty Krab
